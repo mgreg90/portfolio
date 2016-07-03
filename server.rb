@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-    html :portfolioSite
+  redirect '/home.html'
 end
