@@ -114,3 +114,7 @@ div.title-divider-centerer {
   flex-direction: row;
   justify-content: center;
 }
+
+a {
+  color: #ECF0F1;
+}
