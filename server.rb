@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  redirect '/home.html'
+  redirect '/views/home.html'
 end
