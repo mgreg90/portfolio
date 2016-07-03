@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  background-image: url("./assets/backPorchCoding.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/*Navbar*/
+
+div.navbar {
+  height: 100vh;
+  background: rgb(49, 53, 61);
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul.navbar {
+  color: rgb(236, 240, 241);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 5px 0 5px rgba(13, 42, 64, 0.2);
+}
+
+ul.navbar li {
+  padding: 20px 0 20px 20px;
+  border-top: solid rgb(236, 240, 241) 1px;
+  font-family: 'Cairo', sans-serif;
+  font-size: 20px;
+}
+
+ul.navbar li:last-child {
+  border-bottom: solid rgb(236, 240, 241) 1px;
+}
+
+div.navbar-bottom ul.navbar li {
+  padding: 10px 0 10px 0;
+  text-align: center;
+  border-top: solid rgb(236, 240, 241) 1px;
+}
+
+ul.navbar li:hover {
+  background: rgb(51, 95, 255);
+}
+
+/*Landing Page*/
+
+div.container {
+  height: 100%;
+  width: 100%;
+  background: rgba(52, 152, 219, 0.75);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+div.landing-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.landing-name {
+  margin: 0;
+  width: auto;
+  color:rgb(236, 240, 241);
+  font-family: 'Poppins', sans-serif;
+}
+
+h1.landing-name {
+  font-size: 100px;
+  padding: 50px 50px 5px 0;
+}
+
+h2.landing-name {
+  font-size: 35px;
+  padding: 15px 0 50px 0;
+  margin-left: 10px;
+}
+
+div.title-divider {
+  border-top: solid rgb(236, 240, 241) 1px;
+  border-bottom: solid rgb(236, 240, 241) 1px;
+  border-radius: 300px 300px;
+  width: 20%;
+  height: 3px;
+  background: rgb(236, 240, 241);
+  margin-left: 5px;
+}
+
+div.flex-horiz-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -120px;
+}
+
+div.flex-vert-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 120px;
+}
+
+div.title-container {
+
+}
+
+div.title-divider-centerer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
