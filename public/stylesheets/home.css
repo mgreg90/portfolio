@@ -1,3 +1,29 @@
+/*
+New Color Scheme:
+
+Reddish:
+HTML code:	#de2728
+
+Light Blue:
+HTML code:	#21addd
+
+Nav Black:
+HTML code:	#272727
+
+Nav Text:
+HTML code:	#999
+
+Nav Hover Gray:
+HTML code:	#4B4B4B
+
+Darker Off-white:
+HTML code:	#e1e1e1
+
+Lighter Off-white (actual white?):
+HTML code:	#FFFFFF
+*/
+
+
 body {
   margin: 0;
   background-image: url("../assets/backPorchCoding.jpg");
@@ -10,7 +36,7 @@ body {
 
 div.navbar {
   height: 100vh;
-  background: rgb(49, 53, 61);
+  background: #272727;
   width: 160px;
   display: flex;
   flex-direction: column;
@@ -18,7 +44,7 @@ div.navbar {
 }
 
 ul.navbar {
-  color: rgb(236, 240, 241);
+  color: #999;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -27,23 +53,27 @@ ul.navbar {
 
 ul.navbar li {
   padding: 20px 0 20px 20px;
-  border-top: solid rgb(236, 240, 241) 1px;
+  /*border-top: solid rgb(236, 240, 241) 1px;*/
   font-family: 'Cairo', sans-serif;
   font-size: 20px;
 }
 
-ul.navbar li:last-child {
+/*ul.navbar li:last-child {
   border-bottom: solid rgb(236, 240, 241) 1px;
-}
+}*/
 
 div.navbar-bottom ul.navbar li {
   padding: 10px 0 10px 0;
   text-align: center;
-  border-top: solid rgb(236, 240, 241) 1px;
+  /*border-top: solid rgb(236, 240, 241) 1px;*/
 }
 
 ul.navbar li:hover {
-  background: rgba(52, 152, 219, 1);
+  background: #4B4B4B;
+}
+
+.fa {
+  color: #999;
 }
 
 /*Landing Page*/
@@ -51,7 +81,9 @@ ul.navbar li:hover {
 div.container {
   height: 100%;
   width: 100%;
-  background: rgba(52, 152, 219, 0.75);
+  background: url('../assets/blurred_sky.jpg') center no-repeat;
+  /*background: #21addd;*/
+  /*background: rgba(33, 173, 221, 0.75);*/
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -117,4 +149,34 @@ div.title-divider-centerer {
 
 a {
   color: #ECF0F1;
+}
+
+.page-container {
+  height: 80vh;
+  width: 80vw;
+  background: rgb(231, 76, 60);
+  display:block;
+  position:absolute;
+  top:10vh;
+  left: 160px;
+  border-left:
+  /*z-index: 5;*/
+}
+
+#bio-container {
+  display: none; /* while working on bio */
+}
+
+#projects-container {
+  display: none; /* while working on bio */
+}
+
+#contact-container {
+  display: none; /* while working on bio */
+}
+
+.inner-container {
+  background: rgb(236, 240, 241);
+  height: 99%;
+  margin: 0.5% 0.5% 0 0;
 }
