@@ -175,12 +175,14 @@ div.panel {
   height: 100%;
   margin: 0;
   border-right: solid #272727 1px;
+  background: #e1e1e1;
 }
 
 div.vert-scroll-panel {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
+  overflow:auto;
 }
 
 #bio-container {
@@ -210,6 +212,12 @@ h2#projects-panel-title {
 div.indiv-project-button {
   cursor: pointer;
   margin: auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+div.indiv-project-button:last-child {
+  margin-bottom: 6px;
 }
 
 #contact-container {
