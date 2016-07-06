@@ -53,19 +53,18 @@ ul.navbar {
 
 ul.navbar li {
   padding: 20px 0 20px 20px;
-  /*border-top: solid rgb(236, 240, 241) 1px;*/
   font-family: 'Cairo', sans-serif;
   font-size: 20px;
+  cursor: pointer;
 }
 
-/*ul.navbar li:last-child {
-  border-bottom: solid rgb(236, 240, 241) 1px;
-}*/
+#nav-logo {
+  cursor: pointer;
+}
 
 div.navbar-bottom ul.navbar li {
   padding: 10px 0 10px 0;
   text-align: center;
-  /*border-top: solid rgb(236, 240, 241) 1px;*/
 }
 
 ul.navbar li:hover {
@@ -100,6 +99,7 @@ div.landing-container {
   width: auto;
   color:rgb(236, 240, 241);
   font-family: 'Poppins', sans-serif;
+  cursor: default;
 }
 
 h1.landing-name {
