@@ -81,7 +81,8 @@ ul.navbar li:hover {
 div.container {
   height: 100%;
   width: 100%;
-  background: url('../assets/blurred_sky.jpg') center no-repeat;
+  background: #21addd url('../assets/blurred_sky.jpg');
+  background-size: cover;
   /*background: #21addd;*/
   /*background: rgba(33, 173, 221, 0.75);*/
   display: flex;
@@ -126,7 +127,7 @@ div.flex-horiz-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: -120px;
+  margin-top: -160px;
 }
 
 div.flex-vert-center {
@@ -134,7 +135,7 @@ div.flex-vert-center {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  margin-top: 120px;
+  margin-top: 160px;
 }
 
 div.title-container {
