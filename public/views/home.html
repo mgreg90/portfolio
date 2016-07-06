@@ -12,11 +12,11 @@
     <div class="container">
       <div class="navbar">
         <div class="navbar-top">
-          <img src="http://placehold.it/160x160/de2728/000000">
+          <img src="http://placehold.it/160x160/de2728/000000" onClick="showHome()">
           <ul class="navbar">
             <li id="bio" onclick="showBio()">Who am I?</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li id="projects" onclick="showProjects()">Projects</li>
+            <li id="contact" onclick="showContact()">Contact</li>
           </ul>
         </div>
         <div class="navbar-bottom">
@@ -41,14 +41,14 @@
       </div>
       <div id="bio-container" class="page-container">
         <div class="inner-container">
-
+          <h2>Bio</h2>
         </div>
       </div>
       <div id="projects-container" class="page-container">
-
+        <h2>Projects</h2>
       </div>
       <div id="contact-container" class="page-container">
-
+        <h2>Contact</h2>
       </div>
       <div class="landing-container">
        <div class="flex-vert-center">
