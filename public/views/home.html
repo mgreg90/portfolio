@@ -12,7 +12,7 @@
     <div class="container">
       <div class="navbar">
         <div class="navbar-top">
-          <img id="nav-logo" src="http://placehold.it/160x160/de2728/000000" onClick="showHome()">
+          <img id="nav-logo" src="http://placehold.it/160x160/de2728/000000">
           <ul class="navbar">
             <li id="bio">Who am I?</li>
             <li id="projects">Projects</li>
@@ -39,80 +39,82 @@
           </ul>
         </div>
       </div>
-      <!-- Bio -->
-      <div id="bio-container" class="page-container">
-        <!-- Dummy bio first panel -->
-        <div class="panel projects-panel-title"> <!-- Needs class like id="bio-panel-title" -->
-          <h2 id="projects-panel-title">Bio</h2> <!-- Needs ID like id="bio-panel-title" -->
+      <div class="body-container">
+        <!-- Bio -->
+        <div id="bio-container" class="page-container">
+          <!-- Dummy bio first panel -->
+          <div class="panel projects-panel-title"> <!-- Needs class like id="bio-panel-title" -->
+            <h2 id="projects-panel-title">Bio</h2> <!-- Needs ID like id="bio-panel-title" -->
+          </div>
         </div>
+        <!-- Projects -->
+        <div id="projects-container" class="page-container">
+          <!-- Projects title panel -->
+          <div class="panel projects-panel-title">
+            <h2 id="projects-panel-title">Projects</h2>
+          </div>
+          <!-- Projects list panel -->
+          <div class="panel projects-panel-2 vert-scroll-panel">
+            <div class="indiv-project-button">
+              <h3>Open Mic</h3>
+              <p>
+                Open Mic is a platform for fans of local comedy to rate and review
+                local comedy shows and comedians. Comedians can use Open Mic to
+                build a reputation and gain feedback from fans.
+              </p>
+              <img src="http://placehold.it/250x250">
+            </div>
+            <div class="indiv-project-button">
+              <h3>TechStart</h3>
+              <p>
+                My first group project! TechStart is a place for employers and
+                job seekers to meet. Companies place profiles on TechStart so that
+                job hunters can find information about them more easily.
+              </p>
+              <img src="http://placehold.it/250x250">
+            </div>
+            <div class="indiv-project-button">
+              <h3>Appointment API</h3>
+              <p>
+                As part of a coding challenge, I had to build an API that would
+                allow a user to print, schedule, reschedule, and cancel
+                appointments.
+              </p>
+              <img src="http://placehold.it/250x250">
+            </div>
+            <div class="indiv-project-button">
+              <h3>NBA 3-on-3</h3>
+              <p>
+                My first REPL game! It's an NBA 3-on-3 simulator based on the
+                classic NBA Jams games. Players have different skill sets and
+                there's a 24 second shot clock. Have fun!
+              </p>
+              <img src="http://placehold.it/250x250">
+            </div>
+            <div class="indiv-project-button">
+              <h3>Election Simulator</h3>
+              <p>
+                This simple election simulator lets users register individual
+                voters or generate voters in batches based on ideology
+                distribution. The user can then register politicans and see who
+                wins!
+              </p>
+              <img src="http://placehold.it/160x160">
+            </div>
+          </div>
+          <div class="panel">
+            <h2 id="projects-panel-title">Some Project</h2>
+          </div>
+        </div>
+        <!-- Contact -->
+        <div id="contact-container" class="page-container">
+          <!-- Dummy contact first panel -->
+          <div class="panel projects-panel-title"> <!-- Needs class like id="contact-panel-title" -->
+            <h2 id="projects-panel-title">Contact</h2> <!-- Needs ID like id="contact-panel-title" -->
+          </div>
+        </div>
+        <!-- Landing -->
       </div>
-      <!-- Projects -->
-      <div id="projects-container" class="page-container">
-        <!-- Projects title panel -->
-        <div class="panel projects-panel-title">
-          <h2 id="projects-panel-title">Projects</h2>
-        </div>
-        <!-- Projects list panel -->
-        <div class="panel projects-panel-2 vert-scroll-panel">
-          <div class="indiv-project-button">
-            <h3>Open Mic</h3>
-            <p>
-              Open Mic is a platform for fans of local comedy to rate and review
-              local comedy shows and comedians. Comedians can use Open Mic to
-              build a reputation and gain feedback from fans.
-            </p>
-            <img src="http://placehold.it/250x250">
-          </div>
-          <div class="indiv-project-button">
-            <h3>TechStart</h3>
-            <p>
-              My first group project! TechStart is a place for employers and
-              job seekers to meet. Companies place profiles on TechStart so that
-              job hunters can find information about them more easily.
-            </p>
-            <img src="http://placehold.it/250x250">
-          </div>
-          <div class="indiv-project-button">
-            <h3>Appointment API</h3>
-            <p>
-              As part of a coding challenge, I had to build an API that would
-              allow a user to print, schedule, reschedule, and cancel
-              appointments.
-            </p>
-            <img src="http://placehold.it/250x250">
-          </div>
-          <div class="indiv-project-button">
-            <h3>NBA 3-on-3</h3>
-            <p>
-              My first REPL game! It's an NBA 3-on-3 simulator based on the
-              classic NBA Jams games. Players have different skill sets and
-              there's a 24 second shot clock. Have fun!
-            </p>
-            <img src="http://placehold.it/250x250">
-          </div>
-          <div class="indiv-project-button">
-            <h3>Election Simulator</h3>
-            <p>
-              This simple election simulator lets users register individual
-              voters or generate voters in batches based on ideology
-              distribution. The user can then register politicans and see who
-              wins!
-            </p>
-            <img src="http://placehold.it/160x160">
-          </div>
-        </div>
-        <div class="panel">
-          <h2 id="projects-panel-title">Some Project</h2>
-        </div>
-      </div>
-      <!-- Contact -->
-      <div id="contact-container" class="page-container">
-        <!-- Dummy contact first panel -->
-        <div class="panel projects-panel-title"> <!-- Needs class like id="contact-panel-title" -->
-          <h2 id="projects-panel-title">Contact</h2> <!-- Needs ID like id="contact-panel-title" -->
-        </div>
-      </div>
-      <!-- Landing -->
       <div id="landing-container" class="landing-container">
        <div class="flex-vert-center">
           <div id="title-container" class="title-container">
