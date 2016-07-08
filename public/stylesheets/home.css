@@ -240,11 +240,11 @@ div.vert-scroll-panel {
 }
 
 #bio-container {
-  display: none; /* while working on bio */
+  display: flex; /* while working on bio */
 }
 
 #projects-container {
-  display: none; /* while working on bio */
+  display: flex; /* while working on bio */
 }
 
 div.projects-panel-title {
@@ -276,5 +276,5 @@ div.indiv-project-button:last-child {
 }
 
 #contact-container {
-  display: none; /* while working on bio */
+  display: flex; /* while working on bio */
 }
