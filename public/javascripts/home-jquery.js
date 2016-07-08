@@ -13,15 +13,9 @@ function renderLanding(innerContainersArray) {
 }
 
 function renderLandingAnimated() {
-  $('#landing-container').addClass('visible').show();
+  // $('.body-container').animate({"left":"-1000px"}, "slow");
   $('.body-container').removeClass('visible').hide();
-  // for (var i = 0; i < innerContainersArray.length; i++) {
-  //   if (containersArray[i].hasClass('visible')) {
-  //     console.log(containersArray[i]);
-  //     containersArray[i].removeClass('visible').hide();
-  //   };
-  // };
-  // containersArray[0].show();
+  $('#landing-container').addClass('visible').show();
   pushDownNavBar();
 }
 
