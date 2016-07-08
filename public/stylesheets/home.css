@@ -245,6 +245,7 @@ div.vert-scroll-panel {
 
 #projects-container {
   display: flex; /* while working on bio */
+  /*right: 1500px;*/
 }
 
 div.projects-panel-title {

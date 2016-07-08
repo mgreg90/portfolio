@@ -18,6 +18,7 @@ function renderProjects() {
   $('#landing-container').hide();
   $('#bio-container').hide();
   $('#projects-container').show();
+  // $('#projects-container').show().animate({"right": "=0"}, "slow");
   $('#contact-container').hide();
   pushUpNavBar();
 }
