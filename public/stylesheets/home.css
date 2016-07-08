@@ -33,24 +33,79 @@ https://www.flickr.com/photos/77309394@N00/311518381
 
 body {
   margin: 0;
-  background-image: url("../assets/backPorchCoding.jpg");
   background-size: cover;
-  height: 100%;
-  width: 100%;
+  /*height: 100vh;
+  width: 100vw;*/
+  overflow-y: hidden;
 }
 
 a {
   color: #ECF0F1;
 }
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+  background: #272727;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 15px;
+  height: 15px;
+  background: #4B4B4B;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  border: 3px solid #4B4B4B;
+}
+
+/*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #272727;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}*/
+
+::-webkit-scrollbar-thumb {
+  height: 12px;
+  width: 12px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 3px solid #272727;
+  background: #de2728;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+/*::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255,0,0,0.4);
+}*/
+
+/*::webkit-scrollbar:vertical {
+  width: 15px;
+  height: 15px;
+  background: #000000;
+}*/
+
+/*::-webkit-scrollbar-button {
+  background-color: #de2728;
+}*/
+
+/*::-webkit-scrollbar-corner {
+      background-color: #272727;
+}*/
+
+
 /*Navbar*/
 
 div.navbar {
   height: 100vh;
   background: #272727;
   width: 160px;
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 10;
 }
 
 ul.navbar {
@@ -174,7 +229,6 @@ div.panel {
   width: 500px;
   height: 100%;
   margin: 0;
-  border-right: solid #272727 1px;
   background: #e1e1e1;
 }
 
@@ -196,6 +250,7 @@ div.vert-scroll-panel {
 div.projects-panel-title {
   background: #e1e1e1 url('../assets/laptopCoding1-resized-bw.jpg');
   background-size: cover;
+  border-right: solid #272727 1px;
 }
 
 div.projects-panel-2 {
