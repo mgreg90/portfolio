@@ -23,17 +23,17 @@ function renderLandingAnimated() {
 function renderBio() {
   $('#landing-container').hide();
   $('.body-container').show();
-  $('#bio-container').addClass('visible').show();
-  $('#projects-container').removeClass('visible').hide();
-  $('#contact-container').removeClass('visible').hide();
+  $('#bio-container').show();
+  $('#projects-container').hide();
+  $('#contact-container').hide();
   pushUpNavBar();
 }
 
 function renderBioAnimated() {
   $('.body-container').show();
-  $('#bio-container').addClass('visible').show();
-  $('#projects-container').removeClass('visible').hide();
-  $('#contact-container').removeClass('visible').hide();
+  $('#bio-container').show();
+  $('#projects-container').hide();
+  $('#contact-container').hide();
   $('.page-container').animate({left: 160}, 500, function() {
     $('#landing-container').hide();
   })
@@ -43,18 +43,18 @@ function renderBioAnimated() {
 function renderProjects() {
   $('#landing-container').hide();
   $('.body-container').show();
-  $('#bio-container').removeClass('visible').hide();
-  $('#projects-container').addClass('visible').show();
-  $('#contact-container').removeClass('visible').hide();
+  $('#bio-container').hide();
+  $('#projects-container').show();
+  $('#contact-container').hide();
   pushUpNavBar();
 }
 
 function renderProjectsAnimated() {
   $('.body-container').show();
-  $('#projects-container').addClass('visible').show();
+  $('#projects-container').show();
+  $('#bio-container').hide();
+  $('#contact-container').hide();
   $('.page-container').animate({left: 160}, 500, function() {
-    $('#bio-container').removeClass('visible').hide();
-    $('#contact-container').removeClass('visible').hide();
     $('#landing-container').hide();
   })
   pushUpNavBar();
@@ -63,17 +63,17 @@ function renderProjectsAnimated() {
 function renderContact() {
   $('#landing-container').hide();
   $('.body-container').show();
-  $('#bio-container').removeClass('visible').hide();
-  $('#projects-container').removeClass('visible').hide();
-  $('#contact-container').addClass('visible').show();
+  $('#bio-container').hide();
+  $('#projects-container').hide();
+  $('#contact-container').show();
   pushUpNavBar();
 }
 
 function renderContactAnimated() {
   $('.body-container').show();
-  $('#contact-container').addClass('visible').show();
-  $('#bio-container').removeClass('visible').hide();
-  $('#projects-container').removeClass('visible').hide();
+  $('#contact-container').show();
+  $('#bio-container').hide();
+  $('#projects-container').hide();
   $('.page-container').animate({left: 160}, 500, function() {
     $('#landing-container').hide();
   })
