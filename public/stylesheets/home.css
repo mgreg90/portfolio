@@ -33,6 +33,8 @@ https://www.flickr.com/photos/77309394@N00/311518381
 
 body {
   margin: 0;
+  background: #21addd url('../assets/blurred_sky.jpg');
+  background-size: cover;
 }
 
 a {
@@ -141,8 +143,6 @@ ul.navbar li:hover {
 div.container {
   height: 100%;
   width: 100%;
-  background: #21addd url('../assets/blurred_sky.jpg');
-  background-size: cover;
   /*background: #21addd;*/
   /*background: rgba(33, 173, 221, 0.75);*/
   display: flex;
@@ -153,6 +153,7 @@ div.container {
 div.landing-container {
   height: 100vh;
   width: 100%;
+  position: absolute;
 }
 
 .landing-name {
@@ -213,7 +214,7 @@ div.title-divider-centerer {
   flex-direction: row;
   justify-content: flex-start;
   position:absolute;
-  left: 160px;
+  left: 1660px;
 }
 
 div.body-container {
@@ -236,7 +237,7 @@ div.vert-scroll-panel {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  overflow:auto;
+  overflow: auto;
 }
 
 #bio-container {
