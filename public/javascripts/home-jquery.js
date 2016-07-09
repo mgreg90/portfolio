@@ -1,3 +1,11 @@
+function pageContainerDown() {
+  $('.page-container').animate({top: 1660}, 500, function () {
+    $('.body-container').removeClass('visible').hide();
+    $('.page-container').css({top: 0, left: 1660});
+    $('#landing-container').addClass('visible').show();
+  });
+}
+
 function renderLanding(innerContainersArray) {
   $('#landing-container').addClass('visible').show();
   $('.body-container').removeClass('visible').hide();
@@ -8,18 +16,15 @@ function renderLanding(innerContainersArray) {
 }
 
 function renderLandingAnimated() {
-  $('.page-container').animate({left: 1660}, 500, function () {
-    $('.body-container').removeClass('visible').hide();
-    $('#landing-container').addClass('visible').show();
-  });
+  pageContainerDown();
   pushDownNavBar();
 }
 
 function renderBio() {
   $('#landing-container').hide();
   $('.body-container').show();
-  $('#bio-container').removeClass('visible').show();
-  $('#projects-container').addClass('visible').hide();
+  $('#bio-container').addClass('visible').show();
+  $('#projects-container').removeClass('visible').hide();
   $('#contact-container').removeClass('visible').hide();
   pushUpNavBar();
 }
@@ -27,9 +32,9 @@ function renderBio() {
 function renderBioAnimated() {
   $('.body-container').show();
   $('#bio-container').addClass('visible').show();
+  $('#projects-container').removeClass('visible').hide();
+  $('#contact-container').removeClass('visible').hide();
   $('.page-container').animate({left: 160}, 500, function() {
-    $('#projects-container').removeClass('visible').hide();
-    $('#contact-container').removeClass('visible').hide();
     $('#landing-container').hide();
   })
   pushUpNavBar();
@@ -67,9 +72,9 @@ function renderContact() {
 function renderContactAnimated() {
   $('.body-container').show();
   $('#contact-container').addClass('visible').show();
+  $('#bio-container').removeClass('visible').hide();
+  $('#projects-container').removeClass('visible').hide();
   $('.page-container').animate({left: 160}, 500, function() {
-    $('#bio-container').removeClass('visible').hide();
-    $('#projects-container').removeClass('visible').hide();
     $('#landing-container').hide();
   })
   pushUpNavBar();
@@ -90,7 +95,6 @@ function runPage() {
   ];
   // On load stuff
   renderLanding(innerContainersArray);
-  // renderProjects();
   // On event stuff
   $('#bio').click(renderBioAnimated);
   $('#projects').click(renderProjectsAnimated);
