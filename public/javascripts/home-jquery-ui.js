@@ -11,18 +11,36 @@ function navClickSlideIn(arrayButtonContainerHashes) {
     // 1.1 on nav button click
     valueNew['button'].click(
       function() {
-        // 1.1.1 slideOut the active container
+        // 1.1.1 Turn the button red
+        $(this).animate(
+          {
+            backgroundColor: "#de2728",
+            color: "#ffffff"
+          }, 1000
+        );
         $.each(arrayButtonContainerHashes, function(indexOld, valueOld) {
           console.log(valueOld['active']);
           if (valueOld['active'] === true && valueOld != valueNew) {
+            // Make Title visible
             valueOld['container'].hide("slide", {easing: 'easeInOutQuad'}, 800, function(){});
+            // 1.1.2 Make the active container's button black again
+            valueOld['button'].animate(
+              {
+                backgroundColor: "#272727",
+                color: "#999"
+              }, 1000
+            );
+            $('#title-container').show();
+            // 1.1.3 slideOut the active container
           };
         });
-        // 1.1.2 slideIn the container associated with the button
+        // 1.1.4 slideIn the container associated with the button
         if (valueNew['container'] !== false) {
           valueNew['container'].show("slide", {easing: 'easeInOutQuad'}, 800, function(){
-            // 1.1.3 set that container to active in the array of hashes
+            // 1.1.5 set that container to active in the array of hashes
             valueNew['active'] = true;
+            // Make Title go away
+            $('#title-container').hide();
           });
         }
       }

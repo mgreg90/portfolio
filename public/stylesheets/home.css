@@ -112,6 +112,25 @@ div.navbar {
   z-index: 10;
 }
 
+div#nav-logo {
+  background: #de2728;
+  height: 160px;
+  width: 160px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: solid #272727 2px;
+}
+
+span#logo-text {
+  font-size: 90px;
+  font-family: "Cairo", "Helvetica", "Arial", sans-serif;
+  letter-spacing: -7px;
+  margin: -20px 0 0 -10px;
+  color:#272727;
+}
+
 ul.navbar {
   color: #999;
   list-style: none;
@@ -138,6 +157,7 @@ div.navbar-bottom ul.navbar li {
 
 ul.navbar li:hover {
   background: #4B4B4B;
+  color: #ffffff;
 }
 
 .fa {
