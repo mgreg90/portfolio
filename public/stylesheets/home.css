@@ -35,10 +35,16 @@ body {
   margin: 0;
   background: #21addd url('../assets/blurred_sky.jpg');
   background-size: cover;
+  overflow-y: hidden;
 }
 
 a {
   color: #ECF0F1;
+}
+
+.title-container * {
+  position: relative;
+  z-index: -1;
 }
 
 /*Scrollbar*/
@@ -154,6 +160,7 @@ div.landing-container {
   height: 100vh;
   width: 100%;
   position: absolute;
+  /*display: none;*/
 }
 
 .landing-name {
@@ -210,15 +217,16 @@ div.title-divider-centerer {
 
 .page-container {
   height: 100%;
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  position:absolute;
-  left: 1660px;
+  position: absolute;
+  left: 160px;
 }
 
 div.body-container {
   width: 100%;
+  display: none;
 }
 
 div.panel h2 {
