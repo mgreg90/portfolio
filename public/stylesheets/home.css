@@ -156,8 +156,8 @@ div.navbar-bottom ul.navbar li {
 }
 
 ul.navbar li:hover {
-  background: #4B4B4B;
-  color: #ffffff;
+  background: #4B4B4B!important;
+  color: #ffffff!important;
 }
 
 .fa {

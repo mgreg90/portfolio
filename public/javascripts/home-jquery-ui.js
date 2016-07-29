@@ -19,15 +19,14 @@ function navClickSlideIn(arrayButtonContainerHashes) {
           }, 1000
         );
         $.each(arrayButtonContainerHashes, function(indexOld, valueOld) {
-          console.log(valueOld['active']);
           if (valueOld['active'] === true && valueOld != valueNew) {
             // Make Title visible
             valueOld['container'].hide("slide", {easing: 'easeInOutQuad'}, 800, function(){});
             // 1.1.2 Make the active container's button black again
             valueOld['button'].animate(
               {
-                backgroundColor: "#272727",
-                color: "#999"
+                backgroundColor: "transparent",
+                color: "initial"
               }, 1000
             );
             $('#title-container').show();
@@ -49,6 +48,28 @@ function navClickSlideIn(arrayButtonContainerHashes) {
 
     console.log("navClickSlideIn End");
 };
+
+// function navButtonStyleChangeOnHover(arrayButtonContainerHashes) {
+//   console.log("navButtonStyleChangeOnHover Start");
+//   $.each(arrayButtonContainerHashes, function(index, value) {
+//     console.log(value['active']);
+//     if (value['active'] === false && value['container'] !== false) {
+//       value['button'].hover(function() {
+//         $(this).css({
+//           'background': '#4B4B4B',
+//           'color': '#ffffff'
+//         });
+//       }, function() {
+//         $(this).css({
+//           'background': '',
+//           'color': ''
+//         })
+//       });
+//     }
+//     // Left off here, fixing hover
+//   });
+//   console.log("navButtonStyleChangeOnHover End");
+// };
 
 function slideInProjects() {
   console.log("slideInProjects Start");
@@ -86,6 +107,7 @@ function runPage() {
   console.log(arrayButtonContainerHashes)
   setUpPage();
   navClickSlideIn(arrayButtonContainerHashes);
+  navButtonStyleChangeOnHover(arrayButtonContainerHashes);
   // slideInProjects();
   console.log("runPage End");
 };
