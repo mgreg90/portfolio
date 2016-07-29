@@ -272,38 +272,6 @@ div.vert-scroll-panel {
   display: flex; /* while working on bio */
 }
 
-#projects-container {
-  display: flex; /* while working on bio */
-}
-
-div.projects-panel-title {
-  background: #e1e1e1 url('../assets/laptopCoding1-resized-bw.jpg');
-  background-size: cover;
-  border-right: solid #272727 1px;
-}
-
-div.projects-panel-2 {
-  background: #e1e1e1
-}
-
-h2#projects-panel-title {
-  color:#e1e1e1;
-  font-family: 'Cairo', sans-serif;
-  padding: 95px 0 0 50px;
-  font-size: 85px;
-}
-
-div.indiv-project-button {
-  cursor: pointer;
-  margin: auto;
-  text-align: center;
-  padding: 0 20px;
-}
-
-div.indiv-project-button:last-child {
-  margin-bottom: 6px;
-}
-
 #contact-container {
   display: flex; /* while working on bio */
 }
