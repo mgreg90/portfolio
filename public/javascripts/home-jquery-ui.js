@@ -1,6 +1,25 @@
 function setUpPage() {
   console.log("setUpPage Start");
   $('.page-container').hide();
+  $('div.panel.show-project').hide();
+
+  // Show the active project panel
+  $('div.panel.show-project').each(function() {
+    if ($(this).data('active') === true) {
+      $(this).show();
+    }
+  });
+
+  // Style the active project panel button
+  $('li.indiv-project-button').each(function() {
+    if ($(this).data('active') === true) {
+      $(this).css({
+        backgroundColor: "#de2728",
+        color: "#ffffff"
+      });
+    }
+  });
+
   console.log("setUpPage End");
 };
 
@@ -55,12 +74,33 @@ function navClickTogglePanel(arrayButtonContainerHashes) {
 
 function portfolioItemClickToggleItem() {
   $('.indiv-project-button').click(function() {
+    // Change other buttons to default color
+    $(this).each(function() {
+      if ($(this).data('active') === true) {
+        $(this).animate({
+          backgroundColor: "",
+          color: ""
+        });
+        $(this).data('active') = false;
+      }
+    });
+
+    // Change the button color
     $(this).animate(
       {
         backgroundColor: "#de2728",
         color: "#ffffff"
       }, 1000
     );
+    // Change other buttons to inactive
+
+    // Change the clicked button to active
+    $(this).data("active", "true");
+
+    // Hide the other project
+
+    // Show the project
+
   });
 }
 

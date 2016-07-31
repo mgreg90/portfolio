@@ -66,10 +66,10 @@
 
             <!-- Project Buttons Go here -->
             <ul id="project-buttons">
-              <li class="indiv-project-button" data-active='false'>
+              <li class="indiv-project-button" data-active='true' data-panel="div#grozhers-panel">
                 <h3>Grozhers</h3>
               </li>
-              <li class="indiv-project-button" data-active='false'>
+              <li class="indiv-project-button" data-active='false' data-panel="div#openmic-panel">
                 <h3>Open Mic</h3>
               </li>
               <li class="indiv-project-button" data-active='false'>
@@ -86,7 +86,7 @@
               </li>
             </ul>
           </div>
-          <div class="panel show-project">
+          <div id="grozhers-panel" class="panel show-project" data-active='true'>
             <h2 id="projects-panel-title">Grozhers</h2>
             <div class="indiv-project-panel-body">
               <div class="indiv-project-panel-half">
@@ -101,7 +101,7 @@
               </div>
             </div>
           </div>
-          <div class="panel show-project">
+          <div id="openmic-panel" class="panel show-project" data-active='false'>
             <h2 id="projects-panel-title">Open Mic</h2>
             <div class="indiv-project-panel-body">
               <div class="indiv-project-panel-half">

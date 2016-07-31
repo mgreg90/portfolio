@@ -97,10 +97,11 @@ div.panel.show-project h2 {
 div.indiv-project-panel-body {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   color: #e1e1e1;
   font-family: "Cairo", "Helvetica", "Arial", sans-serif;
 }
 
 div.indiv-project-panel-half {
-  width: 50%;
+  width: 45%;
 }
