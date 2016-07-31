@@ -40,19 +40,37 @@ div.projects-panel-2 {
 }
 
 h2#projects-panel-title {
-  color:#e1e1e1;
   font-family: 'Cairo', sans-serif;
-  padding: 95px 0 0 50px;
   font-size: 85px;
+  padding: 0 20px 0 20px;
 }
 
-div.indiv-project-button {
+div.projects-panel-title h2 {
+  color: #e1e1e1;
+}
+
+ul#project-buttons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.indiv-project-button {
   cursor: pointer;
   text-align: center;
   padding: 0 20px;
   border-bottom: 1px black solid;
   font-family: "Cairo", "Helvetica", "Arial", sans-serif;
   letter-spacing: 4px;
+  z-index: 100;
+  position: relative;
+  padding: 20px;
+}
+
+
+
+li.indiv-project-button h3 {
+  margin: 0;
 }
 
 div.indiv-project-button:last-child {

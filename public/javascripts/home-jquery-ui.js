@@ -4,8 +4,10 @@ function setUpPage() {
   console.log("setUpPage End");
 };
 
-function navClickSlideIn(arrayButtonContainerHashes) {
-  console.log("navClickSlideIn Start");
+// *************** Nav Buttons
+
+function navClickTogglePanel(arrayButtonContainerHashes) {
+  console.log("navClickTogglePanel Start");
   // 1. For each button
   $.each(arrayButtonContainerHashes, function(indexNew, valueNew){
     // 1.1 on nav button click
@@ -46,20 +48,27 @@ function navClickSlideIn(arrayButtonContainerHashes) {
     );
   });
 
-    console.log("navClickSlideIn End");
+    console.log("navClickTogglePanel End");
 };
 
-function slideInProjects() {
-  console.log("slideInProjects Start");
-  $('#projects').click(function() {
-    console.log("clicked");
-    $('#projects-container').toggle("slide", {easing: 'easeInOutQuad'}, 800, function(){});
+// *************** Portfolio Buttons
+
+function portfolioItemClickToggleItem() {
+  $('.indiv-project-button').click(function() {
+    $(this).animate(
+      {
+        backgroundColor: "#de2728",
+        color: "#ffffff"
+      }, 1000
+    );
   });
-  console.log("slideInProjects End");
-};
+}
+
+// *************** Run Page
 
 function runPage() {
   console.log("runPage Start");
+  setUpPage();
   var arrayButtonContainerHashes = [
     {
       button: $('#nav-logo'),
@@ -83,9 +92,7 @@ function runPage() {
     }
   ];
   console.log(arrayButtonContainerHashes)
-  setUpPage();
-  navClickSlideIn(arrayButtonContainerHashes);
-  // slideInProjects();
+  navClickTogglePanel(arrayButtonContainerHashes);
   console.log("runPage End");
 };
 

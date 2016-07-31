@@ -180,7 +180,6 @@ div.landing-container {
   height: 100vh;
   width: 100%;
   position: absolute;
-  /*display: none;*/
 }
 
 .landing-name {
@@ -210,6 +209,7 @@ div.title-divider {
   height: 3px;
   background: rgb(236, 240, 241);
   margin-left: 5px;
+  margin-top: -35px;
 }
 
 div.flex-horiz-center {
@@ -244,11 +244,6 @@ div.title-divider-centerer {
   left: 160px;
 }
 
-div.body-container {
-  width: 100%;
-  display: none;
-}
-
 div.panel h2 {
   margin:0;
   padding:0;
@@ -259,6 +254,19 @@ div.panel {
   height: 100%;
   margin: 0;
   background: #e1e1e1;
+}
+
+div.panel-divider {
+  border-color: #de2728;
+  background: #de2728;
+  margin: -35px 0 20px 35px;
+}
+
+div.panel-title-box {
+  margin: 150px 50px 0 30px;
+  background: #21addd;
+  opacity: 0.9;
+  display: inline-block;
 }
 
 div.vert-scroll-panel {
