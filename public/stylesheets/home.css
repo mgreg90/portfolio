@@ -109,7 +109,7 @@ div.navbar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 10;
+  z-index: 100;
 }
 
 div#nav-logo {
@@ -263,10 +263,11 @@ div.panel-divider {
 }
 
 div.panel-title-box {
-  margin: 150px 50px 0 30px;
+  margin: 120px 50px 0 30px;
   background: #21addd;
   opacity: 0.9;
   display: inline-block;
+  border-radius: 1px;
 }
 
 div.vert-scroll-panel {

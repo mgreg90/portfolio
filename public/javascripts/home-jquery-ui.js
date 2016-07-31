@@ -93,6 +93,7 @@ function runPage() {
   ];
   console.log(arrayButtonContainerHashes)
   navClickTogglePanel(arrayButtonContainerHashes);
+  portfolioItemClickToggleItem();
   console.log("runPage End");
 };
 
