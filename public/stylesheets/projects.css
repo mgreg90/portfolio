@@ -23,85 +23,74 @@ Lighter Off-white (actual white?):
 HTML code:	#FFFFFF
 */
 
+
 /* Project Buttons Start */
 
 #projects-container {
-  display: flex; /* while working on bio */
+    display: flex;
+    /* while working on bio */
 }
-
 div.projects-panel-title {
-  background: #e1e1e1 url('../assets/laptopCoding1-resized-bw.jpg');
-  background-size: cover;
-  border-right: solid #272727 1px;
+    background: #e1e1e1 url('../assets/laptopCoding1-resized-bw.jpg');
+    background-size: cover;
+    border-right: solid #272727 1px;
 }
-
 div.projects-panel-2 {
-  background: #e1e1e1
+    background: #e1e1e1
 }
-
 h2#projects-panel-title {
-  font-family: 'Cairo', sans-serif;
-  font-size: 85px;
-  padding: 0 20px 0 20px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 85px;
+    padding: 0 20px 0 20px;
 }
-
 div.projects-panel-title h2 {
-  color: #272727;
+    color: #272727;
 }
-
 ul#project-buttons {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-
 .indiv-project-button {
-  cursor: pointer;
-  text-align: center;
-  padding: 0 20px;
-  border-bottom: 1px #272727 solid;
-  font-family: "Cairo", "Helvetica", "Arial", sans-serif;
-  letter-spacing: 4px;
-  z-index: 10;
-  position: relative;
-  padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 20px;
+    border-bottom: 1px #272727 solid;
+    font-family: "Cairo", "Helvetica", "Arial", sans-serif;
+    letter-spacing: 4px;
+    z-index: 10;
+    position: relative;
+    padding: 20px;
 }
-
-
-
 li.indiv-project-button h3 {
-  margin: 0;
+    margin: 0;
 }
-
 div.indiv-project-button:last-child {
-  margin-bottom: 6px;
+    margin-bottom: 6px;
 }
-
 div.panel.projects-panel-2 {
-  width: 300px;
+    width: 300px;
 }
 
 /* Project Buttons End */
 
+
 /*Show Project*/
+
 div.panel.show-project {
-  background: #272727;
-  width: 775px;
-
+    background: #272727;
+    width: 775px;
 }
-
 div.panel.show-project h2 {
-  color: #e1e1e1;
+    color: #e1e1e1;
 }
-
 div.indiv-project-panel-body {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  color: #e1e1e1;
-  font-family: "Cairo", "Helvetica", "Arial", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #e1e1e1;
+    font-family: "Cairo", "Helvetica", "Arial", sans-serif;
 }
-
 div.indiv-project-panel-half {
-  width: 45%;
+    width: 45%;
 }

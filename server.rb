@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  redirect '/views/home.html'
+  erb :home
 end
