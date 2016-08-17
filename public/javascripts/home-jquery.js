@@ -20,15 +20,6 @@ function renderLandingAnimated() {
   pushDownNavBar();
 }
 
-function renderBio() {
-  $('#landing-container').hide();
-  $('.body-container').show();
-  $('#bio-container').show();
-  $('#projects-container').hide();
-  $('#contact-container').hide();
-  pushUpNavBar();
-}
-
 function renderBioAnimated() {
   $('.body-container').show();
   $('#bio-container').show();
@@ -36,16 +27,7 @@ function renderBioAnimated() {
   $('#contact-container').hide();
   $('.page-container').animate({left: 160}, 500, function() {
     $('#landing-container').hide();
-  })
-  pushUpNavBar();
-}
-
-function renderProjects() {
-  $('#landing-container').hide();
-  $('.body-container').show();
-  $('#bio-container').hide();
-  $('#projects-container').show();
-  $('#contact-container').hide();
+  });
   pushUpNavBar();
 }
 
@@ -56,16 +38,7 @@ function renderProjectsAnimated() {
   $('#contact-container').hide();
   $('.page-container').animate({left: 160}, 500, function() {
     $('#landing-container').hide();
-  })
-  pushUpNavBar();
-}
-
-function renderContact() {
-  $('#landing-container').hide();
-  $('.body-container').show();
-  $('#bio-container').hide();
-  $('#projects-container').hide();
-  $('#contact-container').show();
+  });
   pushUpNavBar();
 }
 
@@ -76,7 +49,7 @@ function renderContactAnimated() {
   $('#projects-container').hide();
   $('.page-container').animate({left: 160}, 500, function() {
     $('#landing-container').hide();
-  })
+  });
   pushUpNavBar();
 }
 
