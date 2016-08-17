@@ -21,7 +21,7 @@ function setUpPage() {
   });
 
   console.log("setUpPage End");
-};
+}
 
 // *************** Nav Buttons
 
@@ -52,7 +52,7 @@ function navClickTogglePanel(arrayButtonContainerHashes) {
             );
             $('#title-container').show();
             // 1.1.3 slideOut the active container
-          };
+          }
         });
         // 1.1.4 slideIn the container associated with the button
         if (valueNew['container'] !== false) {
@@ -72,33 +72,21 @@ function navClickTogglePanel(arrayButtonContainerHashes) {
 
 // *************** Portfolio Buttons
 
+function savePortfolioButtonColors() {
+  $('.indiv-project-button').each(function() {
+    console.log($(this).css("backgroundColor"));
+    // $(this).data("bg-color", $(this).css('backgroundColor'));
+    // $(this).data("color", $(this).css('color'));
+  });
+}
+
 function portfolioItemClickToggleItem() {
   $('.indiv-project-button').click(function() {
     // Change other buttons to default color
-    $(this).each(function() {
-      if ($(this).data('active') === true) {
-        $(this).animate({
-          backgroundColor: "",
-          color: ""
-        });
-        $(this).data('active') = false;
-      }
-    });
-
     // Change the button color
-    $(this).animate(
-      {
-        backgroundColor: "#de2728",
-        color: "#ffffff"
-      }, 1000
-    );
     // Change other buttons to inactive
-
     // Change the clicked button to active
-    $(this).data("active", "true");
-
     // Hide the other project
-
     // Show the project
 
   });
@@ -133,6 +121,7 @@ function runPage() {
   ];
   console.log(arrayButtonContainerHashes)
   navClickTogglePanel(arrayButtonContainerHashes);
+  savePortfolioButtonColors();
   portfolioItemClickToggleItem();
   console.log("runPage End");
 };
