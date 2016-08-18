@@ -74,21 +74,39 @@ function navClickTogglePanel(arrayButtonContainerHashes) {
 
 function savePortfolioButtonColors() {
   $('.indiv-project-button').each(function() {
-    console.log($(this).css("backgroundColor"));
-    // $(this).data("bg-color", $(this).css('backgroundColor'));
-    // $(this).data("color", $(this).css('color'));
+    $(this).data("bg-color", $(this).css("backgroundColor"));
+    $(this).data("color", $(this).css("color"));
   });
 }
 
 function portfolioItemClickToggleItem() {
   $('.indiv-project-button').click(function() {
     // Change other buttons to default color
+    $('.indiv-project-button').each(function() {
+      $(this).animate({
+        backgroundColor: $(this).data("bg-color"),
+        color: $(this).data("color")
+      });
+    });
     // Change the button color
-    // Change other buttons to inactive
-    // Change the clicked button to active
-    // Hide the other project
-    // Show the project
-
+    $(this).animate({
+      backgroundColor: "#de2728",
+      color: "#ffffff"
+    });
+    // Hide project
+    var projectPanelHash = $(this).data('panel');
+    $('div#indiv-project-panel').hide('slide', function() {
+      // Set variables
+      console.log(projectPanelHash);
+      // TODO left off here!
+      // Change project data
+      $('h2#indiv-project-panel-title').text(projectPanelHash.title);
+      $('div.indiv-project-panel-half p').text(projectPanelHash.summary);
+      $('div.indiv-project-panel-half ul li a#github').attr('href', projectPanelHash.github);
+      $('div.indiv-project-panel-half ul li a#site').attr('href', projectPanelHash.url);
+    });
+    // Show project
+    $('div#indiv-project-panel').show('slide');
   });
 }
 

@@ -38,7 +38,7 @@ div.projects-panel-title {
 div.projects-panel-2 {
     background: #e1e1e1
 }
-h2#projects-panel-title {
+h2 {
     font-family: 'Cairo', sans-serif;
     font-size: 85px;
     padding: 0 20px 0 20px;
@@ -81,6 +81,12 @@ div.panel.show-project {
     background: #272727;
     width: 775px;
 }
+
+#indiv-project-panel-title {
+  margin-left: 15px;
+}
+
+
 div.panel.show-project h2 {
     color: #e1e1e1;
 }
