@@ -102,10 +102,14 @@ function portfolioItemClickToggleItem() {
       // Change project data
       $('h2#indiv-project-panel-title').text(projectPanelHash.title);
       $('div.indiv-project-panel-half p').text(projectPanelHash.summary);
+      $('div.indiv-project-panel-half img').attr('src', projectPanelHash.image);
       $('div.indiv-project-panel-half ul li a#github').attr('href', projectPanelHash.github);
       $('div.indiv-project-panel-half ul li a#site').attr('href', projectPanelHash.url);
     });
     // Show project
+    var leftPos = $('div#projects-container').scrollLeft() - 200;
+    console.log(leftPos)
+    $('div#projects-container').animate({scrollLeft: leftPos - 200});
     $('div#indiv-project-panel').show('slide');
   });
 }

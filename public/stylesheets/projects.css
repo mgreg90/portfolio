@@ -100,3 +100,7 @@ div.indiv-project-panel-body {
 div.indiv-project-panel-half {
     width: 45%;
 }
+
+div.indiv-project-panel-half img {
+  max-width: 350px;
+}
