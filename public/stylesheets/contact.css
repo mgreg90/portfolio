@@ -1,0 +1,14 @@
+ul.contact-list li {
+  line-height: 2.5em;
+  font-family: "Lato";
+  font-size: 14pt;
+}
+
+ul.contact-list li a {
+  color: black;
+  text-decoration: none;
+}
+
+ul.contact-list li a:hover {
+  font-weight: bold;
+}
