@@ -1,7 +1,13 @@
+ul.contact-list {
+  margin: 0;
+  padding: 0;
+}
+
 ul.contact-list li {
-  line-height: 2.5em;
+  line-height: 1em;
   font-family: "Lato";
   font-size: 14pt;
+  padding: 1.25em 0 1.25em 40px;
 }
 
 ul.contact-list li a {

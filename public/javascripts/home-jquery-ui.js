@@ -121,6 +121,16 @@ function portfolioItemClickToggleItem() {
   });
 }
 
+function colorContactLinkOnHover() {
+  var origColor
+  $('ul.contact-list li a').hover(function() {
+    origColor = $(this).parent().css("background-color");
+    $(this).parent().css("background-color", "#999");
+  }, function() {
+    $(this).parent().css("background-color", origColor);
+  });
+}
+
 // *************** Run Page
 
 function runPage() {
@@ -152,6 +162,7 @@ function runPage() {
   navClickTogglePanel(arrayButtonContainerHashes);
   savePortfolioButtonColors();
   portfolioItemClickToggleItem();
+  colorContactLinkOnHover();
   console.log("runPage End");
 }
 
