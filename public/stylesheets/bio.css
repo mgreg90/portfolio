@@ -1,0 +1,42 @@
+/*CSS for bio panel*/
+
+/*
+New Color Scheme:
+
+Reddish:
+HTML code:	#de2728
+
+Light Blue:
+HTML code:	#21addd
+
+Nav Black:
+HTML code:	#272727
+
+Nav Text:
+HTML code:	#999
+
+Nav Hover Gray:
+HTML code:	#4B4B4B
+
+Darker Off-white:
+HTML code:	#e1e1e1
+
+Lighter Off-white (actual white?):
+HTML code:	#FFFFFF
+*/
+
+div.bio-panel-half p {
+  margin: 10px;
+  /*TODO Play with text alignment here!*/
+}
+
+.bio-img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+}
+
+.bio-img-container img {
+  border-radius: 100%;
+}

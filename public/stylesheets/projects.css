@@ -23,6 +23,10 @@ Lighter Off-white (actual white?):
 HTML code:	#FFFFFF
 */
 
+li {
+  list-style: none;
+}
+
 
 /* Project Buttons Start */
 

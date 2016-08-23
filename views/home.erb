@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../stylesheets/home.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/projects.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/bio.css">
     <link href="https://fonts.googleapis.com/css?family=Cairo:700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet" type="text/css">
     <title>Mike Gregory</title>
@@ -47,10 +48,34 @@
       <!-- <div class="body-container"> -->
         <!-- Bio -->
         <div id="bio-container" class="page-container">
-          <!-- Dummy bio first panel -->
-          <div class="panel projects-panel-title"> <!-- Needs class like id="bio-panel-title" -->
-            <h2 id="projects-panel-title">Bio</h2> <!-- Needs ID like id="bio-panel-title" -->
+          <!-- Bio title panel -->
+          <div class="panel projects-panel-title">
+            <div class="panel-title-box">
+              <h2 id="bio-panel-title">About Me</h2>
+              <div class="title-divider panel-divider"></div>
+            </div>
           </div>
+
+          <!-- Bio panel -->
+          <div id="bio-panel" class="panel show-bio">
+            <div class="bio-panel-body">
+              <div class="bio-panel-half">
+                <div class="bio-img-container">
+                  <img src='assets/wyncodePhoto.png'/>
+                </div>
+                <p>
+                  Hello! My name is Michael Gregory and I'm a web developer down
+                  here in sunny Miami, FL! I'm proficient in Ruby, HTML, CSS,
+                  JavaScript, and the Ruby on Rails framework. My background is
+                  in finance, so if you are looking for a dynamic webpage for
+                  your investment consulting, financial advising, banking, or
+                  fund management firm, I'm uniquely qualified to understand
+                  your industry-specific needs and build your webpage!
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
         <!-- Projects -->
         <div id="projects-container" class="page-container">
@@ -66,34 +91,36 @@
 
             <!-- Project Buttons Go here -->
             <ul id="project-buttons">
-              <li class="indiv-project-button" data-panel='{"title":"Grozhers", "summary":"Grozhers summary goes here", "github":"http://github.com/mgreg90/grozhers2", "url":"http://grozhers.herokuapp.com", "image":"assets/project-images/grozhers.png"}'>
+              <li class="indiv-project-button" data-panel='{"title":"Grozhers", "summary":"Grozhers is a (poorly named) group grocery list app. Users can create and join groups and add or remove items from the grocery list. Great for keeping grocery lists organized for families with many people who might go to the store or many people who might want to request an item.", "github":"http://github.com/mgreg90/grozhers2", "url":"http://grozhers.herokuapp.com", "image":"assets/project-images/grozhers.png"}'>
                 <h3>Grozhers</h3>
               </li>
-              <li class="indiv-project-button" data-panel='{"title":"Open Mic", "summary":"Open Mic summary goes here", "github":"https://github.com/AllWeDoisNguyen/OpenMic", "url":"http://openmicmiami.co", "image":"assets/project-images/open-mic.png"}'>
+              <li class="indiv-project-button" data-panel='{"title":"Open Mic", "summary":"My final project at wyncode! Open Mic is a social media web app for comedians, show promoters, and comedy fans. Users and comedians can leave reviews and ratings for shows and comedians so that other users can make more informed decisions about which comedians and shows to go see. The app provides some transparency into local comedy scenes so that potential fans can make decisions about which shows and comedians to go see.", "github":"https://github.com/AllWeDoisNguyen/OpenMic", "url":"http://openmicmiami.co", "image":"assets/project-images/open-mic.png"}'>
                 <h3>Open Mic</h3>
               </li>
-              <li class="indiv-project-button" data-panel='{"title":"Tech Start", "summary":"", "github":"", "url":"", "image":"assets/project-images/tech-start.png"}'>
+              <li class="indiv-project-button" data-panel='{"title":"Tech Start", "summary":"My friends & family night project at wyncode! Tech Start is a platform for companies to create profiles so that potential employees can make more informed decisions about which companies are right for them. Companies benefit because high quality employees will be more likely to apply if they know that a company is offering what they are most looking for.", "github":"http://github.com/mgreg90/TechStart", "url":"http://techstart.herokuapp.com/", "image":"assets/project-images/tech-start.png"}'>
                 <h3>Tech Start</h3>
               </li>
-              <li class="indiv-project-button" data-panel='{"title":"Appointment API", "summary":"", "github":"", "url":"", "image":"assets/project-images/appointment-api.png"}'>
+              <li class="indiv-project-button" data-panel='{"title":"Appointment API", "summary":"Built for the CareCloud coding challenge! The Appointment API provides an interface for other apps to view/create/remove/update appointments by sending information through the params of an http request.", "github":"https://github.com/mgreg90/Appointments", "url":"https://carecloudapptsapi.herokuapp.com/", "image":"assets/project-images/appointment-api.png"}'>
                 <h3>Appointment API</h3>
               </li>
-              <li class="indiv-project-button" data-panel='{"title":"Election Simulator", "summary":"", "github":"", "url":"", "image":"assets/project-images/voter-sim.png"}'>
+              <li class="indiv-project-button" data-panel='{"title":"Election Simulator", "summary":"A command-line game/tool to simulate an election. Users can generate a number of voters and indicate their political ideologies and also create politicians. The user can then run scenarios of elections with different voting populations and candidate combinations and see different outcomes.", "github":"http://github.com/mgreg90/voting_simulator", "url":"", "image":"assets/project-images/voter-sim.png"}'>
                 <h3>Election Simulator</h3>
               </li>
-              <li class="indiv-project-button" data-panel='{"title":"NBA 3-on-3", "summary":"", "github":"", "url":"", "image":"assets/project-images/nba-3-on-3.png"}'>
+              <li class="indiv-project-button" data-panel='{"title":"NBA 3-on-3", "summary":"My REPL game at wyncode! It simulates an NBA basketball game. There is a game clock and a shot clock and two teams: the Miami Heat and the Cleveland Cavaliers. Players on each time have different skills for shooting and driving.", "github":"http://github.com/mgreg90/basketball_game", "url":"", "image":"assets/project-images/nba-3-on-3.png"}'>
                 <h3>NBA 3-on-3</h3>
               </li>
-              <li class="indiv-project-button" data-panel='{"title":"Nina & Danton", "summary":"", "github":"", "url":"", "image":"assets/project-images/nina-and-danton.png"}'>
+              <li class="indiv-project-button" data-panel='{"title":"Nina & Danton", "summary":"A static website for my cousin Nina&#39;s wedding. Built using only regular old HTML, CSS, JS, and JQuery. Also, using Sinatra for easy hosting on heroku. Old version is at &#60;a href=http://ninaanddanton.com&#62;http://ninaanddanton.com&#60;&#47;a&#62; for comparison.", "github":"https://github.com/mgreg90/ninaAndDanton", "url":"http://ninaanddanton.herokuapp.com", "image":"assets/project-images/nina-and-danton.png"}'>
                 <h3>Nina & Danton</h3>
               </li>
             </ul>
           </div>
+
+          <!-- Start Individual Project Panel -->
           <div id="indiv-project-panel" class="panel show-project">
             <h2 id="indiv-project-panel-title">Grozhers</h2>
             <div class="indiv-project-panel-body">
               <div class="indiv-project-panel-half">
-                <img src="http://placehold.it/350x350">
+                <a id="proj-img-link" href=""><img src="http://placehold.it/350x350"></a>
                 <ul>
                   <li><a id="github" href="">Link to github</a></li>
                   <li><a id="site" href="">Link to site</a></li>
@@ -104,6 +131,7 @@
               </div>
             </div>
           </div>
+          <!-- End Individual Project Panel -->
         </div>
         <!-- Contact -->
         <div id="contact-container" class="page-container">
