@@ -25,9 +25,13 @@ Lighter Off-white (actual white?):
 HTML code:	#FFFFFF
 */
 
-div.bio-panel-half p {
-  margin: 10px;
+.bio-panel-half p {
+  margin: 30px;
+  font-size: 14pt;
   /*TODO Play with text alignment here!*/
+  line-height: 1.5em;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .bio-img-container {
@@ -39,4 +43,5 @@ div.bio-panel-half p {
 
 .bio-img-container img {
   border-radius: 100%;
+  /*box-shadow: 10px 10px #888888;*/
 }
