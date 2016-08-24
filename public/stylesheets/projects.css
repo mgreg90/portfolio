@@ -47,6 +47,7 @@ h2 {
     font-size: 85px;
     padding: 0 20px 0 20px;
 }
+
 div.projects-panel-title h2 {
     color: #272727;
 }
@@ -93,6 +94,8 @@ div.panel.show-project {
 
 div.panel.show-project h2 {
     color: #e1e1e1;
+    line-height: 1em;
+    margin-bottom: 0.5em;
 }
 div.indiv-project-panel-body {
     display: flex;
